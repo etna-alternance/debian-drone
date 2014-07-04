@@ -4,10 +4,11 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
 RUN apt-get install -y locales
-RUN locale-gen --no-purge en_US.UTF-8
+RUN locale-gen --no-purge en_US en_US.UTF-8
 
+ENV HOME /root
 ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
+ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 RUN apt-get upgrade -y
