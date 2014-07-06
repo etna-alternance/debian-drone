@@ -17,6 +17,6 @@ ENV TZ Europe/Paris
 
 RUN apt-get upgrade -y
 RUN apt-get install -y build-essential
-RUN apt-get install -t squeeze-backports -y git
+RUN apt-get install -y -t squeeze-backports git
 RUN apt-get install -y socat
 RUN apt-get install -y wget curl
