@@ -15,7 +15,7 @@ ENV LANGUAGE en_US.UTF-8
 ENV TZ Europe/Paris
 
 RUN apt-get upgrade -y
-RUN apt-get install -y build-essential
+RUN apt-get install -y build-essential autoconf
 RUN apt-get install -y socat
 RUN apt-get install -y wget curl
 
