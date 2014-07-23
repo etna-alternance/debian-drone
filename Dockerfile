@@ -16,6 +16,7 @@ ENV TZ Europe/Paris
 
 RUN apt-get upgrade -y
 RUN apt-get install -y build-essential autoconf zlib1g zlib1g-dev
+RUN apt-get install -y openssl libssl-dev
 RUN apt-get install -y socat
 RUN apt-get install -y wget curl
 
