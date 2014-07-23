@@ -19,6 +19,7 @@ RUN apt-get install -y build-essential autoconf zlib1g zlib1g-dev python
 RUN apt-get install -y openssl libssl-dev
 RUN apt-get install -y socat
 RUN apt-get install -y wget curl
+RUN apt-get install -y mysql-client
 
 ADD git-1.7.5.4 /tmp/git
 
