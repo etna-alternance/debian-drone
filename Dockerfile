@@ -22,7 +22,4 @@ RUN apt-get install -y wget curl
 ADD git-1.7.5.4 /tmp/git
 
 RUN cd /tmp/git && \
-    make configure && \
-    ./configure --prefix=/usr --without-tcltk && \
-    make all && \
-    make install
+    make NO_CURL=1 NO_MSGFMT=YesPlease NO_TCLTK=YesPlease NO_GETTEXT=YesPlease prefix=/usr/local install
