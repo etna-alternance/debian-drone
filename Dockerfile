@@ -23,6 +23,6 @@ ADD git-1.7.5.4 /tmp/git
 
 RUN cd /tmp/git && \
     make configure && \
-    ./configure --prefix=/usr && \
+    ./configure --prefix=/usr --without-tcltk && \
     make all && \
     make install
