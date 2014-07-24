@@ -17,7 +17,7 @@ ENV TZ Europe/Paris
 RUN apt-get upgrade -y
 RUN apt-get install -y build-essential autoconf
 RUN apt-get install -y wget curl openssl socat mysql-client python
-RUN apt-get install -y zlib1g zlib1g-dev libssl-dev libcurl4-openssl-dev libcurl4-gnutls-dev libexpat1-dev gettext
+RUN apt-get install -y zlib1g zlib1g-dev libssl-dev libcurl4-openssl-dev libexpat1-dev gettext
 
 ADD git-1.7.5.4 /tmp/git
 
