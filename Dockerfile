@@ -22,4 +22,4 @@ RUN apt-get install -y zlib1g zlib1g-dev libssl-dev libcurl4-openssl-dev
 ADD git-1.7.5.4 /tmp/git
 
 RUN cd /tmp/git && \
-    make NO_CURL=1 NO_MSGFMT=YesPlease NO_TCLTK=YesPlease NO_GETTEXT=YesPlease prefix=/usr/local install
+    make NO_MSGFMT=YesPlease NO_TCLTK=YesPlease NO_GETTEXT=YesPlease prefix=/usr/local install
